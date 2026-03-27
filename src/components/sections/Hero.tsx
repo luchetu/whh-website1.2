@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import type { ReactNode } from 'react'
-import { ButtonLink } from '@/components/ui/ButtonLink'
+import { ButtonLink } from '@/components/ui/Button'
 
 const partnerLogos = [
   {

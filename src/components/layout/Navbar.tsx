@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { ButtonLink } from '@/components/ui/ButtonLink'
+import { ButtonLink } from '@/components/ui/Button'
 
 const navItems = [
   { href: '/services', label: 'Services' },
