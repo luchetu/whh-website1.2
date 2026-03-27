@@ -31,15 +31,15 @@ function ServiceCard({
   description: string
 }) {
   return (
-    <article className="flex h-full flex-col rounded-2xl bg-[#f3f3f3] p-5 text-[#181818]">
-      <div className="flex items-start gap-3">
+    <article className="grid h-full grid-rows-[auto_1fr_auto] rounded-2xl bg-[#0A0A0C1A] p-5 text-[#181818]">
+      <div className="flex min-h-[4.5rem] items-start gap-3">
         <span className="mt-1 h-3 w-3 rotate-45 rounded-[2px] border border-[#d4aa22]" />
         <h3 className="max-w-[14rem] text-lg font-medium leading-snug tracking-tight">
           {title}
         </h3>
       </div>
 
-      <p className="mt-5 max-w-[16rem] flex-1 text-sm leading-6 text-[#4e4e4e]">
+      <p className="mt-5 max-w-[16rem] text-sm leading-6 text-[#4e4e4e]">
         {description}
       </p>
 
