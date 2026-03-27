@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { ButtonLink } from '@/components/ui/ButtonLink'
 
 const navItems = [
@@ -14,12 +15,14 @@ export default function Navbar() {
     <header className="px-4 pt-6 pb-0 sm:px-6 lg:px-10">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 bg-white px-5 py-4 shadow-[0_18px_50px_rgba(20,20,20,0.08)] sm:px-8">
         <Link href="/" className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#1292ee] text-lg font-black text-white">
-            X
-          </div>
-          <p className="text-lg font-semibold tracking-tight text-[#161616]">
-            Kristalogic
-          </p>
+          <Image
+            src="/images/Logo.svg"
+            alt="Kristalogic"
+            width={200}
+            height={50}
+            className="h-8 w-auto sm:h-9"
+            priority
+          />
         </Link>
 
         <nav className="hidden items-center gap-5 text-[11px] font-medium uppercase tracking-[0.18em] text-[#595959] lg:flex">
