@@ -35,8 +35,8 @@ const partnerLogos = [
     name: 'Sitemark',
     src: '/images/sitemark.svg',
     width: 188,
-    height: 64,
-    className: 'h-[2.09rem] w-auto sm:h-[2.42rem]',
+    height: 80,
+    className: 'h-[2.5rem] w-auto sm:h-[2.9rem]',
   },
 ]
 
