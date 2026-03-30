@@ -49,26 +49,26 @@ export function ServicesOfferingsSection() {
   return (
     <section className="bg-white py-16 sm:py-20">
       <div className="px-4 sm:px-8 lg:px-12">
-        <div className="grid gap-10 lg:grid-cols-[0.6fr_1.4fr] lg:items-start lg:gap-12">
-          <div>
+        <div className="grid gap-10 lg:grid-cols-[0.6fr_1.4fr] lg:items-stretch lg:gap-12">
+          <div className="lg:flex lg:h-full lg:flex-col">
             <p className="text-[16px] font-medium uppercase tracking-[0.02em] text-[#111]">
               Services
             </p>
 
-            <div className="mt-24 space-y-10 lg:mt-[8.9rem]">
+            <div className="mt-24 space-y-10 lg:mt-[8.9rem] lg:flex lg:h-full lg:flex-col">
               <p className="max-w-[24rem] text-[14px] font-normal leading-[1.4] tracking-[0] text-[#2f2f2f]">
                 We take creative leaps and offer tailored solutions
                 <br />
                 for the growth of your digital products.
               </p>
 
-              <div className="relative mt-20 w-full max-w-[13rem] overflow-hidden bg-[#ece9e4] md:mt-24 lg:mt-[12.5rem]">
+              <div className="relative mt-20 w-[320px] overflow-hidden bg-[#ece9e4] md:mt-24 lg:mt-auto">
                 <Image
                   src="/images/phone.png"
                   alt="Mobile product preview"
-                  width={420}
-                  height={520}
-                  className="h-auto w-full object-cover"
+                  width={320}
+                  height={345}
+                  className="h-[345px] w-[320px] object-cover"
                 />
               </div>
             </div>
@@ -83,7 +83,7 @@ export function ServicesOfferingsSection() {
               </h2>
             </div>
 
-            <div className="border-t border-[#bfbfbf]">
+            <div>
               {serviceOfferings.map((item, index) => (
                 <ServicesOfferingsItem
                   key={`${item.number}-${item.title}`}

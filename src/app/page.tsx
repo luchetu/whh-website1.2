@@ -9,7 +9,7 @@ import {
 export default function Home() {
   return (
     <>
-      <main className="pb-6 text-[#161616]">
+      <main className="text-[#161616]">
         <HeroSection
           imageSrc="/images/hero1.jpg"
           imageAlt="Developer working late at a desk"
