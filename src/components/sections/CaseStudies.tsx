@@ -45,16 +45,16 @@ export function CaseStudiesSection() {
             </p>
 
             <p className="text-[14px] font-normal leading-[1.4] tracking-[0] text-[#2f2f2f]">
-              <span className="block">
+              <span className="block whitespace-nowrap">
                 Check out our completed projects and see why
               </span>
-              <span className="block">
+              <span className="block whitespace-nowrap">
                 clients value our expertise. We provide solutions
               </span>
-              <span className="block">
+              <span className="block whitespace-nowrap">
                 that drive growth and innovation through
               </span>
-              <span className="block">
+              <span className="block whitespace-nowrap">
                 exceptional design and customised features.
               </span>
             </p>

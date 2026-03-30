@@ -34,10 +34,10 @@ export function HeroSection({
       aria-label={imageAlt}
     >
       <div
-        className="relative min-h-[620px] bg-cover bg-center bg-no-repeat sm:min-h-[640px]"
+        className="relative min-h-[620px] bg-cover bg-[center_center] bg-no-repeat sm:min-h-[640px]"
         style={{ backgroundImage: `url(${imageSrc})` }}
       >
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(4,9,14,0.9)_0%,rgba(4,9,14,0.68)_34%,rgba(4,9,14,0.3)_68%,rgba(4,9,14,0.48)_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(4,9,14,0.94)_0%,rgba(4,9,14,0.82)_34%,rgba(4,9,14,0.5)_68%,rgba(4,9,14,0.62)_100%)]" />
 
         <div className="relative flex min-h-[620px] flex-col justify-between px-4 py-10 text-white sm:min-h-[640px] sm:px-8 sm:py-14 lg:px-14">
           <div className="flex w-full flex-col gap-4">
