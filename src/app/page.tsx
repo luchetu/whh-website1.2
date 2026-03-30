@@ -1,5 +1,10 @@
 import Footer from '@/components/layout/Footer'
-import { HeroSection, ServicesSection } from '@/components/sections'
+import {
+  CaseStudiesSection,
+  HeroSection,
+  ServicesSection,
+  ServicesOfferingsSection,
+} from '@/components/sections'
 
 export default function Home() {
   return (
@@ -18,6 +23,8 @@ export default function Home() {
           showPartnerLogos
         />
         <ServicesSection />
+        <CaseStudiesSection />
+        <ServicesOfferingsSection />
       </main>
       <Footer />
     </>
