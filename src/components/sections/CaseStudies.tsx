@@ -38,30 +38,30 @@ export function CaseStudiesSection() {
   return (
     <section className="bg-white py-12 sm:py-14 lg:py-10">
       <div className="px-4 sm:px-8 lg:px-9">
-        <div className="flex w-full max-w-[1306px] flex-col justify-between gap-8 md:flex-row md:items-start">
-          <div className="max-w-[17rem] space-y-7">
+        <div className="flex w-full max-w-[1306px] flex-col justify-between gap-5 md:flex-row md:items-start">
+          <div className="max-w-[17rem] space-y-5">
             <p className="text-[16px] font-medium uppercase tracking-[0.02em] text-[#111]">
               Case Studies
             </p>
 
             <p className="text-[14px] font-normal leading-[1.4] tracking-[0] text-[#2f2f2f]">
-              <span className="block whitespace-nowrap">
+              <span className="block">
                 Check out our completed projects and see why
               </span>
-              <span className="block whitespace-nowrap">
+              <span className="block">
                 clients value our expertise. We provide solutions
               </span>
-              <span className="block whitespace-nowrap">
+              <span className="block">
                 that drive growth and innovation through
               </span>
-              <span className="block whitespace-nowrap">
+              <span className="block">
                 exceptional design and customised features.
               </span>
             </p>
           </div>
 
           <div className="space-y-4 md:ml-auto">
-            <h2 className="max-w-none text-left text-[2.1rem] font-medium leading-[1.2] tracking-[0] text-[#111] sm:text-[2.7rem] lg:text-right">
+            <h2 className="max-w-none text-left text-[1.95rem] font-medium leading-[1.15] tracking-[0] text-[#111] min-[420px]:text-[2.1rem] sm:text-[2.7rem] lg:text-right">
               From ideas to impact
               <br />
               Our Latest Successfully
@@ -69,7 +69,7 @@ export function CaseStudiesSection() {
               Completed Project
             </h2>
 
-            <div className="flex justify-start pt-6 lg:justify-end lg:pt-[5.05rem]">
+            <div className="flex justify-start pt-3 lg:justify-end lg:pt-[4.75rem]">
               <Link
                 href="/projects"
                 className="inline-flex items-center gap-2 border-b border-[#111] pb-1 text-[11px] leading-none text-[#232323]"

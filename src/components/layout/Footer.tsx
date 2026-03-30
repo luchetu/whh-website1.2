@@ -64,7 +64,7 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer className="bg-white pb-6 text-[#1a1a1a]">
-      <div className="px-6 py-10 sm:px-8 lg:px-10 lg:py-12">
+      <div className="px-4 py-10 sm:px-8 lg:px-10 lg:py-12">
         <div className="flex flex-col gap-12 lg:flex-row lg:justify-between">
           <div className="max-w-xs">
             <Link href="/" className="inline-flex items-center">
@@ -84,9 +84,9 @@ export default function Footer() {
               hello@kristalogic.systems.com
             </a>
 
-            <div className="mt-8 flex items-center gap-4">
+            <div className="mt-8 flex flex-wrap items-center gap-4">
               <span className="text-[13px] text-[#4d4d4d]">Follow us</span>
-              <div className="flex items-center gap-2">
+              <div className="flex flex-wrap items-center gap-2">
                 {socialLinks.map((item) => (
                   <a
                     key={item.label}
@@ -101,9 +101,9 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="grid gap-10 sm:grid-cols-3 sm:gap-14 lg:gap-20">
+          <div className="grid gap-10 min-[540px]:grid-cols-2 sm:grid-cols-3 sm:gap-14 lg:gap-20">
             {footerColumns.map((column) => (
-              <div key={column.heading}>
+              <div key={column.heading} className="min-w-0">
                 <h2 className="text-[11px] font-medium tracking-[0.04em] text-[#919191]">
                   {column.heading}
                 </h2>
@@ -124,7 +124,9 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 flex flex-col gap-6 border-t border-[#efebe5] pt-6 text-[11px] uppercase tracking-[0.04em] text-[#2f2f2f] sm:flex-row sm:items-end sm:justify-between">
-          <p>©2025 Kristalogic Systems Limited. All Rights Reserved.</p>
+          <p className="max-w-[22rem] leading-5">
+            ©2025 Kristalogic Systems Limited. All Rights Reserved.
+          </p>
 
           <a
             href="#page-top"

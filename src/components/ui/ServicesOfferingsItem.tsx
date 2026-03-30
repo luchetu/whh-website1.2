@@ -20,13 +20,13 @@ export function ServicesOfferingsItem({
       <button
         type="button"
         onClick={onToggle}
-        className="grid w-full grid-cols-[auto_1fr_auto] items-start gap-x-8 gap-y-3 py-5 text-left"
+        className="grid w-full grid-cols-[auto_1fr] items-start gap-x-4 gap-y-3 py-5 text-left md:grid-cols-[auto_1fr_auto] md:gap-x-8"
         aria-expanded={isOpen}
       >
         <span className="pt-1 text-[12px] leading-none text-[#303030]">{number}</span>
 
         <div className="min-w-0">
-          <h3 className="text-[24px] font-normal leading-[1.2] tracking-[0] text-[#141414] md:text-[32px]">
+          <h3 className="text-[22px] font-normal leading-[1.2] tracking-[0] text-[#141414] min-[420px]:text-[24px] md:text-[32px]">
             {title}
           </h3>
 
@@ -37,7 +37,7 @@ export function ServicesOfferingsItem({
           ) : null}
         </div>
 
-        <span className="flex min-w-[5.5rem] items-center justify-end gap-2 pt-1 text-[11px] text-[#2d2d2d]">
+        <span className="col-span-2 flex min-w-[5.5rem] items-center justify-start gap-2 pt-1 text-[11px] text-[#2d2d2d] md:col-span-1 md:justify-end">
           {isOpen ? (
             <>
               <Link href="/contactus" className="border-b border-[#1f1f1f] pb-px">

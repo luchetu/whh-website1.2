@@ -65,14 +65,14 @@ export function ServicesSection() {
       <div className="px-4 sm:px-8 lg:px-12">
         <div className="grid gap-8 lg:grid-cols-[1.25fr_0.75fr] lg:items-start">
           <div className="max-w-xl">
-            <h2 className="text-4xl font-medium leading-[1.2] tracking-[0] text-[#191919] sm:text-5xl">
+            <h2 className="text-[2.2rem] font-medium leading-[1.15] tracking-[0] text-[#191919] min-[420px]:text-4xl sm:text-5xl">
               Transform Ideas
               <br />
               into high value products
             </h2>
           </div>
 
-          <div className="max-w-md justify-self-end text-[14px] font-normal leading-[1.4] tracking-[0] text-[#4d4d4d]">
+          <div className="max-w-md justify-self-start text-[14px] font-normal leading-[1.5] tracking-[0] text-[#4d4d4d] lg:justify-self-end">
             <p>
               For over 5 years, we&apos;ve crafted top-tier solutions across various
               sectors. Our team of over 500 skilled engineers has transformed from

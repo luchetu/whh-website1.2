@@ -34,20 +34,20 @@ export function HeroSection({
       aria-label={imageAlt}
     >
       <div
-        className="relative min-h-[640px] bg-cover bg-center bg-no-repeat"
+        className="relative min-h-[620px] bg-cover bg-center bg-no-repeat sm:min-h-[640px]"
         style={{ backgroundImage: `url(${imageSrc})` }}
       >
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(4,9,14,0.9)_0%,rgba(4,9,14,0.68)_34%,rgba(4,9,14,0.3)_68%,rgba(4,9,14,0.48)_100%)]" />
 
-        <div className="relative flex min-h-[640px] flex-col justify-between px-6 py-12 text-white sm:px-10 sm:py-14 lg:px-14">
+        <div className="relative flex min-h-[620px] flex-col justify-between px-4 py-10 text-white sm:min-h-[640px] sm:px-8 sm:py-14 lg:px-14">
           <div className="flex w-full flex-col gap-4">
             <div className="max-w-[36rem]">
-              <h1 className="max-w-[31rem] text-[2.15rem] font-medium leading-[1.12] tracking-tight sm:text-[2.35rem]">
+              <h1 className="max-w-[31rem] text-[1.9rem] font-medium leading-[1.08] tracking-tight min-[420px]:text-[2.15rem] sm:text-[2.35rem]">
                 {title}
               </h1>
             </div>
 
-            <div className="max-w-[31rem] space-y-4 text-sm leading-7 text-white/82 sm:text-base">
+            <div className="max-w-[31rem] space-y-4 text-[14px] leading-6 text-white/82 sm:text-base sm:leading-7">
               {description.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}
@@ -71,8 +71,8 @@ export function HeroSection({
 
           {showPartnerLogos ? (
             <div className="mt-4 flex w-full -translate-y-4 justify-center pt-0 sm:mt-6 sm:-translate-y-5">
-              <div className="flex w-full max-w-[860px] items-center justify-between gap-4 px-2 text-white/76">
-                <span className="text-[13px] font-medium uppercase tracking-[0.08em] text-white/90 sm:text-[14px]">
+              <div className="flex w-full max-w-[860px] flex-wrap items-center justify-center gap-x-5 gap-y-4 px-2 text-white/76 sm:justify-between">
+                <span className="w-full text-center text-[12px] font-medium uppercase tracking-[0.08em] text-white/90 sm:w-auto sm:text-left sm:text-[14px]">
                   Trusted by
                 </span>
                 {partnerLogos.map((logo) => (
