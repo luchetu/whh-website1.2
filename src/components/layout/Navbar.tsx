@@ -12,8 +12,8 @@ const navItems = [
 
 export default function Navbar() {
   return (
-    <header className="px-4 pt-6 pb-0 sm:px-6 lg:px-10">
-      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 bg-white px-5 py-4 shadow-[0_18px_50px_rgba(20,20,20,0.08)] sm:px-8">
+    <header className="bg-white pt-0 pb-0">
+      <div className="flex flex-wrap items-center justify-between gap-4 px-5 py-4 shadow-[0_18px_50px_rgba(20,20,20,0.08)] sm:px-8 lg:px-10">
         <Link href="/" className="flex items-center gap-3">
           <Image
             src="/images/Logo.svg"

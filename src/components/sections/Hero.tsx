@@ -1,44 +1,7 @@
 import Image from 'next/image'
 import type { ReactNode } from 'react'
 import { ButtonLink } from '@/components/ui/Button'
-
-const partnerLogos = [
-  {
-    name: 'Snowflake',
-    src: '/images/Logo  snowaflake.svg',
-    width: 165,
-    height: 34,
-    className: 'h-[1.28rem] w-auto sm:h-[1.5rem]',
-  },
-  {
-    name: 'Umbrella',
-    src: '/images/umbrellalogo.svg',
-    width: 178,
-    height: 64,
-    className: 'h-[2.6rem] w-auto sm:h-[3rem]',
-  },
-  {
-    name: 'Luminous',
-    src: '/images/luminouslogo.svg',
-    width: 164,
-    height: 64,
-    className: 'h-[2.6rem] w-auto sm:h-[3rem]',
-  },
-  {
-    name: 'Nextmove',
-    src: '/images/Nextmovelogo.svg',
-    width: 174,
-    height: 48,
-    className: 'h-[2.09rem] w-auto sm:h-[2.42rem]',
-  },
-  {
-    name: 'Sitemark',
-    src: '/images/sitemark.svg',
-    width: 188,
-    height: 80,
-    className: 'h-[2.5rem] w-auto sm:h-[2.9rem]',
-  },
-]
+import { partnerLogos } from '@/utils/partnerLogos'
 
 type HeroSectionProps = {
   imageSrc: string
@@ -66,16 +29,15 @@ export function HeroSection({
   showPartnerLogos = false,
 }: HeroSectionProps) {
   return (
-    <section className="overflow-hidden bg-white shadow-[0_24px_80px_rgba(20,20,20,0.12)]">
-      <div className="relative min-h-[640px]">
-        <Image
-          src={imageSrc}
-          alt={imageAlt}
-          fill
-          priority
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(6,12,18,0.84)_0%,rgba(6,12,18,0.52)_32%,rgba(6,12,18,0.12)_65%,rgba(6,12,18,0.32)_100%)]" />
+    <section
+      className="overflow-hidden bg-[#050b11] shadow-[0_24px_80px_rgba(20,20,20,0.12)]"
+      aria-label={imageAlt}
+    >
+      <div
+        className="relative min-h-[640px] bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${imageSrc})` }}
+      >
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(4,9,14,0.9)_0%,rgba(4,9,14,0.68)_34%,rgba(4,9,14,0.3)_68%,rgba(4,9,14,0.48)_100%)]" />
 
         <div className="relative flex min-h-[640px] flex-col justify-between px-6 py-12 text-white sm:px-10 sm:py-14 lg:px-14">
           <div className="flex w-full flex-col gap-4">

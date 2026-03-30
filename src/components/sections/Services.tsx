@@ -61,35 +61,37 @@ function ServiceCard({
 
 export function ServicesSection() {
   return (
-    <section className="bg-white px-4 py-16 sm:px-8 sm:py-20 lg:px-12">
-      <div className="grid gap-8 lg:grid-cols-[1.25fr_0.75fr] lg:items-start">
-        <div className="max-w-xl">
-          <h2 className="text-4xl font-medium leading-tight tracking-tight text-[#191919] sm:text-5xl">
-            Transform Ideas
-            <br />
-            into high value products
-          </h2>
+    <section className="bg-white py-16 sm:py-20">
+      <div className="px-4 sm:px-8 lg:px-12">
+        <div className="grid gap-8 lg:grid-cols-[1.25fr_0.75fr] lg:items-start">
+          <div className="max-w-xl">
+            <h2 className="text-4xl font-medium leading-tight tracking-tight text-[#191919] sm:text-5xl">
+              Transform Ideas
+              <br />
+              into high value products
+            </h2>
+          </div>
+
+          <div className="max-w-md justify-self-end text-sm leading-6 text-[#4d4d4d]">
+            <p>
+              For over 5 years, we&apos;ve crafted top-tier solutions across various
+              sectors. Our team of over 500 skilled engineers has transformed from
+              Python innovators to leaders in AI and Data Engineering. This extensive
+              knowledge ensures your vital projects are developed correctly and launched
+              swiftly.
+            </p>
+          </div>
         </div>
 
-        <div className="max-w-md justify-self-end text-sm leading-6 text-[#4d4d4d]">
-          <p>
-            For over 5 years, we&apos;ve crafted top-tier solutions across various
-            sectors. Our team of over 500 skilled engineers has transformed from
-            Python innovators to leaders in AI and Data Engineering. This extensive
-            knowledge ensures your vital projects are developed correctly and launched
-            swiftly.
-          </p>
+        <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+          {serviceItems.map((item) => (
+            <ServiceCard
+              key={item.title}
+              title={item.title}
+              description={item.description}
+            />
+          ))}
         </div>
-      </div>
-
-      <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-        {serviceItems.map((item) => (
-          <ServiceCard
-            key={item.title}
-            title={item.title}
-            description={item.description}
-          />
-        ))}
       </div>
     </section>
   )
