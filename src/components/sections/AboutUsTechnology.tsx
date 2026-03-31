@@ -1,4 +1,3 @@
-// components/sections/AboutUsTechnology.tsx
 
 import { ButtonLink } from '@/components/ui/Button'
 
@@ -7,10 +6,7 @@ export function AboutUsTechnology() {
     <section className="bg-white py-[64px] sm:py-[80px] lg:py-[96px]">
       <div className="mx-auto w-full max-w-[1306px] px-4 sm:px-8 lg:px-12">
 
-        {/* Top Grid */}
         <div className="grid grid-cols-1 gap-[48px] lg:grid-cols-2 lg:gap-[80px]">
-
-          {/* Left column */}
           <div className="flex flex-col">
             <div className="max-w-[520px] space-y-[18px] text-[15px] leading-[1.75] text-[#2f2f2f]">
               <p>
@@ -31,7 +27,6 @@ export function AboutUsTechnology() {
               </p>
             </div>
 
-            {/* Button */}
             <div className="mt-[48px] lg:mt-[80px]">
               <ButtonLink href="/contactus" variant="solid-dark">
                 LET'S TALK
@@ -60,17 +55,10 @@ export function AboutUsTechnology() {
             </h2>
           </div>
         </div>
-
-        {/* ✅ Stats Section (aligned + pulled up) */}
         <div className="mt-[32px] lg:-mt-[10px] grid grid-cols-1 lg:grid-cols-2 lg:gap-[80px]">
-          
-          {/* Spacer column (pushes stats under LEFT column) */}
           <div className="hidden lg:block" />
 
-          {/* Stats */}
           <div className="grid grid-cols-3 gap-[30px] sm:gap-[40px] lg:gap-[60px]">
-            
-            {/* Stat 1 */}
             <div>
               <div className="text-[32px] font-[500] tracking-[-0.02em] text-black sm:text-[40px] lg:text-[48px]">
                 5Y+
@@ -79,8 +67,6 @@ export function AboutUsTechnology() {
                 IN THE MARKET
               </p>
             </div>
-
-            {/* Stat 2 */}
             <div>
               <div className="text-[32px] font-[500] tracking-[-0.02em] text-black sm:text-[40px] lg:text-[48px]">
                 5K+
@@ -89,8 +75,6 @@ export function AboutUsTechnology() {
                 PROJECTS FINISHED
               </p>
             </div>
-
-            {/* Stat 3 */}
             <div>
               <div className="text-[32px] font-[500] tracking-[-0.02em] text-black sm:text-[40px] lg:text-[48px]">
                 40+
