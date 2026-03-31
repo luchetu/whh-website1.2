@@ -1,15 +1,17 @@
+// components/ui/Button.tsx
+
 import Link from 'next/link'
 import type { ReactNode } from 'react'
 
 type ButtonLinkProps = {
   href: string
   children: ReactNode
-  variant?: 'light' | 'ghost-light' | 'outline-dark'
+  variant?: 'light' | 'ghost-light' | 'outline-dark' | 'solid-dark'
   className?: string
 }
 
 const baseClasses =
-  'inline-flex items-center justify-center rounded-full px-5 py-3 text-xs font-semibold uppercase tracking-[0.16em] transition'
+  'inline-flex items-center justify-center rounded-full px-5 py-3 text-xs font-semibold uppercase tracking-[0.16em] transition min-w-[160px]'
 
 const variantClasses = {
   light: 'bg-white text-[#141414] hover:bg-[#ececec]',
@@ -17,6 +19,8 @@ const variantClasses = {
     'border border-white/70 bg-transparent text-white hover:bg-white hover:text-[#141414]',
   'outline-dark':
     'border border-[#202020] bg-transparent text-[#141414] hover:bg-[#202020] hover:text-white',
+  'solid-dark':
+    'bg-[#141414] text-white hover:bg-[#333333]',
 }
 
 export function ButtonLink({
