@@ -101,7 +101,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="grid gap-10 min-[540px]:grid-cols-2 sm:grid-cols-3 sm:gap-14 lg:gap-20">
+          <div className="grid gap-10 min-[540px]:grid-cols-2 sm:grid-cols-3 sm:gap-14 lg:-ml-12 lg:gap-20">
             {footerColumns.map((column) => (
               <div key={column.heading} className="min-w-0">
                 <h2 className="text-[11px] font-medium tracking-[0.04em] text-[#919191]">
@@ -130,7 +130,7 @@ export default function Footer() {
 
           <a
             href="#page-top"
-            className="inline-flex items-end gap-2 self-start text-right normal-case tracking-normal text-[#1a1a1a] transition hover:text-[#1292ee] sm:self-auto"
+            className="inline-flex flex-col items-center gap-1 self-start text-center normal-case tracking-normal text-[#1a1a1a] transition hover:text-[#1292ee] sm:self-auto"
           >
             <span aria-hidden="true" className="text-base leading-none">
               ↑

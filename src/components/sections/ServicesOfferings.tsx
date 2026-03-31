@@ -62,13 +62,13 @@ export function ServicesOfferingsSection() {
                 for the growth of your digital products.
               </p>
 
-              <div className="relative mt-14 w-full max-w-[320px] overflow-hidden bg-[#ece9e4] sm:mt-20 md:mt-24 lg:mt-auto">
+              <div className="relative mt-14 aspect-[320/345] w-full max-w-[280px] overflow-hidden bg-[#ece9e4] sm:mt-20 md:mt-24 lg:mt-auto">
                 <Image
                   src="/images/phone.png"
                   alt="Mobile product preview"
-                  width={320}
-                  height={345}
-                  className="h-auto w-full object-cover"
+                  fill
+                  sizes="(max-width: 640px) 100vw, 280px"
+                  className="object-cover"
                 />
               </div>
             </div>
