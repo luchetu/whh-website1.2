@@ -28,7 +28,7 @@ export function AboutUsServices() {
 
   return (
     <section className="bg-white py-16 sm:py-20">
-      <div className="px-4 sm:px-8 lg:px-12">
+      <div className="mx-auto w-full max-w-[1306px] px-4 sm:px-8 lg:px-12">
         <div className="grid gap-8 lg:grid-cols-[1.25fr_0.75fr] lg:items-start">
           <div className="max-w-xl">
             <h2 className="text-[2.2rem] font-medium leading-[1.15] tracking-[0] text-[#191919] min-[420px]:text-4xl sm:text-5xl">

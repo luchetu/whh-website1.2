@@ -1,11 +1,10 @@
-# Task: Increase height of Sitemark logo slightly
+# Task: Right-align Mission/Vision sections
 
-## Steps:
-- [x] Create TODO.md tracking progress
-- [x] Edit src/components/sections/Hero.tsx: Update Sitemark className from 'h-[2.09rem] w-auto sm:h-[2.42rem]' to 'h-[2.5rem] w-auto sm:h-[2.9rem]'
-- [x] Verify change visually (npm run dev, check home page)
-- [x] Update TODO.md to mark complete
-- [x] Complete task
-
-**Task completed!** Sitemark logo height increased in Hero.tsx partner logos section.
-
+## Steps
+1. [x] Edit src/components/sections/MissionVisionValuesSection.tsx to add `justify-self-end lg:justify-self-end` to Mission/Vision div.
+2. [x] git add .
+3. [x] git commit -m \"feat: right-align Mission and Vision sections\"
+4. [x] git checkout -b blackboxai/right-align-mission-vision
+5. [x] git push -u origin blackboxai/right-align-mission-vision
+6. [x] Install gh CLI if not installed
+ 7. [x] gh pr create to main
