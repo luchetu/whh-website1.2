@@ -70,22 +70,25 @@ export function HeroSection({
           </div>
 
           {showPartnerLogos ? (
-            <div className="mt-4 flex w-full -translate-y-4 justify-center pt-0 sm:mt-6 sm:-translate-y-5">
-              <div className="flex w-full max-w-[860px] flex-wrap items-center justify-center gap-x-5 gap-y-4 px-2 text-white/76 sm:justify-between">
-                <span className="w-full text-center text-[12px] font-medium uppercase tracking-[0.08em] text-white/90 sm:w-auto sm:text-left sm:text-[14px]">
+            <div className="mt-10 flex w-full -translate-y-4 justify-center pt-0 sm:mt-12 sm:-translate-y-5">
+              <div className="flex flex-col items-center gap-6 min-[900px]:flex-row min-[900px]:items-center min-[900px]:justify-between">
+                <span className="text-[12px] font-medium uppercase tracking-[0.08em] text-white/90 sm:text-[14px]">
                   Trusted by
                 </span>
-                {partnerLogos.map((logo) => (
-                  <span key={logo.name} className="inline-flex shrink-0 items-center">
-                    <Image
-                      src={logo.src}
-                      alt={logo.name}
-                      width={logo.width}
-                      height={logo.height}
-                      className={`${logo.className} opacity-65`}
-                    />
-                  </span>
-                ))}
+
+                <div className="flex flex-wrap items-center gap-x-8 gap-y-5 min-[900px]:justify-end lg:gap-x-12">
+                  {partnerLogos.map((logo) => (
+                    <span key={logo.name} className="inline-flex shrink-0 items-center">
+                      <Image
+                        src={logo.src}
+                        alt={logo.name}
+                        width={logo.width}
+                        height={logo.height}
+                        className={`${logo.className} opacity-65`}
+                      />
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           ) : null}

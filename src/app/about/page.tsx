@@ -14,7 +14,7 @@ export default function AboutPage() {
         <AboutHeroSection
           imageSrc="/images/hero2.png"
           imageAlt="A glowing digital map of Africa representing Kristalogic's reach"
-          title="We are Kristalogic Your trusted partner, more than a service provider."
+          title="We are Kristalogic. Your trusted partner, more than a service provider."
           description={[
             'We are a community of digital experts with a passion for building impactful software solutions. Meet the team behind your success.',
             'Delivering great digital products and building culture people want to belong to.',
@@ -23,7 +23,10 @@ export default function AboutPage() {
           secondaryCta={{ href: '/services', label: 'See All Services' }}
           showPartnerLogos
         />
-        <PartnerLogosStrip />
+        <div className="[&_.trusted-by-label]:text-lg [&_.trusted-by-label]:font-bold [&_.trusted-by-label]:ml-12">
+          <PartnerLogosStrip darkLogos />
+        </div>
+
         <AboutUsTechnology />
         <MissionVisionValuesSection />
         <AboutUsServices />

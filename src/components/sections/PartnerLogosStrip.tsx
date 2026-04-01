@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import { partnerLogos } from '@/utils/partnerLogos'
 
-export function PartnerLogosStrip() {
+export function PartnerLogosStrip({ darkLogos = false }: { darkLogos?: boolean }) {
   return (
     <section className="bg-white">
       <div className="px-4 py-10 sm:px-8 lg:px-10 lg:py-12">
         <div className="flex flex-col gap-6 min-[900px]:flex-row min-[900px]:items-center min-[900px]:justify-between">
-          <span className="text-[12px] font-medium uppercase tracking-[0.04em] text-[#1b1b1b]">
+          <span className="trusted-by-label text-[12px] font-medium uppercase tracking-[0.04em] text-[#1b1b1b]">
             Trusted By
           </span>
 
@@ -18,7 +18,7 @@ export function PartnerLogosStrip() {
                   alt={logo.name}
                   width={logo.width}
                   height={logo.height}
-                  className={`${logo.className} brightness-0 opacity-80`}
+                  className={`${logo.className}${darkLogos ? ' brightness-0 saturate-0' : ''}`}
                 />
               </span>
             ))}
