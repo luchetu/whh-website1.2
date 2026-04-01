@@ -6,7 +6,7 @@ const missionText =
 export function MissionVisionValuesSection() {
   return (
     <section className="bg-white py-12 sm:py-16">
-      <div className="px-4 sm:px-8 lg:px-12">
+      <div className="mx-auto w-full max-w-[1306px] px-4 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-10 lg:gap-12 items-center">
 
           <div className="relative w-full aspect-[4/3] lg:w-[260px] xl:w-[300px] lg:aspect-auto lg:h-[320px] overflow-hidden rounded-xl flex-shrink-0">
@@ -18,10 +18,10 @@ export function MissionVisionValuesSection() {
               priority
             />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 lg:gap-12 items-start">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 lg:gap-12 items-start lg:pl-10 xl:pl-14">
 
             {/* Mission + Vision */}
-            <div className="space-y-10">
+            <div className="space-y-10 justify-self-end lg:justify-self-end">
               <div>
                 <h3 className="mb-3 text-[1.9rem] font-medium tracking-[-0.01em] text-[#191919]">
                   Mission
