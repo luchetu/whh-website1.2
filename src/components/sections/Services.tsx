@@ -1,27 +1,5 @@
 import Link from 'next/link'
-
-const serviceItems = [
-  {
-    title: 'Custom Software Development',
-    description:
-      'Optimize your operations with Cloud strategies that cut IT costs, drive growth, and increase efficiency.',
-  },
-  {
-    title: 'Cloud Solutions & Migration',
-    description:
-      'Optimize your operations with Cloud strategies that cut IT costs, drive growth, and increase efficiency.',
-  },
-  {
-    title: 'AI & Data Analytics',
-    description:
-      'Optimize your operations with Cloud strategies that cut IT costs, drive growth, and increase efficiency.',
-  },
-  {
-    title: 'Product Innovation',
-    description:
-      'Optimize your operations with Cloud strategies that cut IT costs, drive growth, and increase efficiency.',
-  },
-]
+import { serviceItems } from '@/utils/serviceItems'
 
 function ServiceCard({
   title,
@@ -76,7 +54,7 @@ export function ServicesSection() {
             <p>
               For over 5 years, we&apos;ve crafted top-tier solutions across various
               sectors. Our team of over 500 skilled engineers has transformed from
-              Python innovators to leaders in AI and Data Engineering. This extensive 
+              Python innovators to leaders in AI and Data Engineering. This extensive
               knowledge ensures your vital projects are developed 
               correctly and launched swiftly.
             </p>

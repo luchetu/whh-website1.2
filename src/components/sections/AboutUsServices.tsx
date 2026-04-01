@@ -1,27 +1,5 @@
 import Link from 'next/link'
-
-const serviceItems = [
-  {
-    title: 'Custom Software Development',
-    description:
-      'Optimize your operations with Cloud strategies that cut IT costs, drive growth, and increase efficiency.',
-  },
-  {
-    title: 'Cloud Solutions & Migration',
-    description:
-      'Optimize your operations with Cloud strategies that cut IT costs, drive growth, and increase efficiency.',
-  },
-  {
-    title: 'AI & Data Analytics',
-    description:
-      'Optimize your operations with Cloud strategies that cut IT costs, drive growth, and increase efficiency.',
-  },
-  {
-    title: 'Product Innovation',
-    description:
-      'Optimize your operations with Cloud strategies that cut IT costs, drive growth, and increase efficiency.',
-  },
-]
+import { serviceItems } from '@/utils/serviceItems'
 
 function ServiceCard({ title, description }: { title: string; description: string }) {
   return (
