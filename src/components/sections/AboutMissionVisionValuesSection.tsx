@@ -3,7 +3,7 @@ import Image from 'next/image';
 const missionText =
   "We envision a future where technology integrates into all aspects of life, empowering both businesses and individuals.";
 
-export function MissionVisionValuesSection() {
+export function AboutMissionVisionValuesSection() {
   return (
     <section className="bg-white py-12 sm:py-16">
       <div className="mx-auto w-full max-w-[1306px] px-4 sm:px-8 lg:px-12">
