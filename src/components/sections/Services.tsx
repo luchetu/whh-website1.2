@@ -50,7 +50,7 @@ export function ServicesSection() {
             </h2>
           </div>
 
-          <div className="max-w-md justify-self-start text-[14px] font-normal leading-[1.5] tracking-[0] text-[#4d4d4d] lg:justify-self-end">
+          <div className="max-w-md justify-self-start text-[14px] font-normal leading-[1.5] tracking-[0] text-[#4d4d4d] lg:justify-self-end lg:-ml-2">
             <p>
               For over 5 years, we&apos;ve crafted top-tier solutions across various
               sectors. Our team of over 500 skilled engineers has transformed from

@@ -6,22 +6,21 @@ export const servicesServiceItems = [
     icon: '/images/Icon1.svg',
   },
   {
-    title: 'Product Innovation',
+    title: 'Cloud Optimization',
     description:
       'Optimise your operations with Cloud strategies that cut IT costs, drive growth, and increase efficiency.',
     icon: '/images/Icon2.svg',
   },
   {
-    title: 'Product Innovation',
+    title: 'AI Solutions',
     description:
       'Optimise your operations with Cloud strategies that cut IT costs, drive growth, and increase efficiency.',
     icon: '/images/Icon2.svg',
   },
   {
-    title: 'Product Innovation',
+    title: 'Data Analytics',
     description:
       'Optimise your operations with Cloud strategies that cut IT costs, drive growth, and increase efficiency.',
     icon: '/images/Icon2.svg',
   },
 ]
-
