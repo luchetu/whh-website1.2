@@ -47,41 +47,42 @@ function ServiceLatestProjectCard({ item }: { item: ServiceLatestProjectItem }) 
     </div>
   )
 }
+
 export function ServicesLatestProjects() {
   return (
     <section className="bg-white py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12">
 
-          <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-[#191919]">
-            Latest Projects
-          </p>
+        <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-[#191919]">
+          Latest Projects
+        </p>
 
-          <div className="grid gap-8 lg:grid-cols-[1.25fr_0.75fr] lg:items-start">
+        <div className="grid gap-8 lg:grid-cols-[1.25fr_0.75fr] lg:items-start">
 
-            <div className="max-w-xl">
-              <h2 className="text-[2.2rem] font-medium leading-[1.15] text-[#191919] min-[420px]:text-4xl sm:text-5xl">
-                End-to-end Software
-                <br />
-                Development Services
-              </h2>
-            </div>
-
-            <div className="max-w-md text-[14px] leading-[1.5] text-[#4d4d4e] lg:ml-auto lg:-ml-2">
-              <p>
-                For over 5 years, we've crafted top-tier solutions across various
-                sectors. Our team of over 500 skilled engineers has transformed from
-                Python innovators to leaders in AI and Data Engineering. This extensive
-                knowledge ensures your vital projects are developed correctly and
-                launched swiftly.
-              </p>
-            </div>
+          <div className="max-w-xl">
+            <h2 className="text-[2.2rem] font-medium leading-[1.15] text-[#191919] min-[420px]:text-4xl sm:text-5xl">
+              End-to-end Software
+              <br />
+              Development Services
+            </h2>
           </div>
 
-          <div className="mt-14 grid gap-x-16 gap-y-12 md:grid-cols-2">
-            {servicesLatestProjectsItems.map((item, index) => (
-              <ServiceLatestProjectCard key={index} item={item} />
-            ))}
+          <div className="max-w-md text-[14px] leading-[1.5] text-[#4d4d4e] lg:ml-auto lg:-ml-2">
+            <p>
+              For over 5 years, we've crafted top-tier solutions across various
+              sectors. Our team of over 500 skilled engineers has transformed from
+              Python innovators to leaders in AI and Data Engineering. This extensive
+              knowledge ensures your vital projects are developed correctly and
+              launched swiftly.
+            </p>
           </div>
+        </div>
+
+        <div className="mt-14 grid gap-x-16 gap-y-12 md:grid-cols-2 lg:pl-16">
+          {servicesLatestProjectsItems.map((item, index) => (
+            <ServiceLatestProjectCard key={index} item={item} />
+          ))}
+        </div>
 
       </div>
     </section>
