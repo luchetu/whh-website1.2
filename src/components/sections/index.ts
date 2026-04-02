@@ -10,3 +10,4 @@ export { AboutMissionVisionValuesSection } from './AboutMissionVisionValuesSecti
 export { AboutUsServices } from './AboutUsServices'
 export { WorkCard } from '../WorkCard'   
 export { OurWorksSection } from './OurWorksSection'
+export { ServicesLatestProjects } from './ServicesLatestProjects'

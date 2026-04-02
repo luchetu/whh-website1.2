@@ -35,10 +35,11 @@ export const serviceOfferings: ServiceOffering[] = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. We help teams launch subscription-based products with strong foundations, smart workflows, and room to scale.',
   },
-  {
-    number: '[6]',
-    title: 'SaaS Development',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. We refine performance, improve usability, and support products after launch with continuous updates.',
-  },
+    {
+      number: '[6]',
+      title: 'Product Maintenance',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. We refine performance, improve usability, and support products after launch with continuous updates.',
+    },
+  
 ]

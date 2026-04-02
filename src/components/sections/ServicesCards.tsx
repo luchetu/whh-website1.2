@@ -55,15 +55,15 @@ export function ServicesCardsSection() {
               into high value products
             </h2>
           </div>
-          <div className="max-w-md justify-self-start text-[14px] font-normal leading-[1.5] tracking-[0] text-[#4d4d4e] lg:justify-self-end">
-            <p>
-              For over 5 years, we've crafted top-tier solutions across various
-              sectors. Our team of over 500 skilled engineers has transformed from
-              Python innovators to leaders in AI and Data Engineering. This extensive
-              knowledge ensures your vital projects are developed 
-              correctly and launched swiftly.
-            </p>
-          </div>
+ <div className="max-w-md text-[14px] leading-[1.5] text-[#4d4d4e] lg:ml-auto lg:-ml-2">
+              <p>
+                For over 5 years, we've crafted top-tier solutions across various
+                sectors. Our team of over 500 skilled engineers has transformed from
+                Python innovators to leaders in AI and Data Engineering. This extensive
+                knowledge ensures your vital projects are developed correctly and
+                launched swiftly.
+              </p>
+            </div>
         </div>
         <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {servicesServiceItems.map((item) => (

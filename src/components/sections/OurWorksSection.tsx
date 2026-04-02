@@ -43,11 +43,6 @@ export function OurWorksSection() {
             />
           ))}
         </div>
-       <div className="mt-16 flex justify-center">
-          <ButtonLink href="/projects" variant="solid-dark">
-            Load More
-          </ButtonLink>
-        </div>
       </div>
     </section>
   )
