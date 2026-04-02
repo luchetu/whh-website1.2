@@ -52,9 +52,6 @@ export function ServicesLatestProjects() {
     <section className="bg-white py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12">
 
-        {/* FINAL ALIGNMENT */}
-        <div className="lg:pl-12">
-
           <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-[#191919]">
             Latest Projects
           </p>
@@ -86,7 +83,6 @@ export function ServicesLatestProjects() {
             ))}
           </div>
 
-        </div>
       </div>
     </section>
   )
