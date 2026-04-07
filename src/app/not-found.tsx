@@ -1,23 +1,12 @@
-import Link from 'next/link'
+import { ErrorStateSection } from '@/components/sections/ErrorStateSection'
 
 export default function NotFound() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center gap-4 px-6 text-center">
-      <p className="text-sm font-medium uppercase tracking-[0.2em] text-gray-500">
-        404
-      </p>
-      <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-        Page not found
-      </h1>
-      <p className="max-w-md text-sm text-gray-600 sm:text-base">
-        The page you&apos;re looking for doesn&apos;t exist or may have moved.
-      </p>
-      <Link
-        href="/"
-        className="rounded-full bg-gray-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-gray-700"
-      >
-        Back home
-      </Link>
-    </main>
+    <ErrorStateSection
+      title="Whoops, that page is gone."
+      description="The page you're looking for doesn't exist or maybe it's taking a coffee break. But don't worry, we're here to guide you back on track."
+      backgroundWord="404"
+      variant="not-found"
+    />
   )
 }
