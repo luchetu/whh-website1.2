@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Footer from '@/components/layout/Footer'
-import { AboutHeroSection, ServicesSection } from '@/components/sections'
+import { AboutHeroSection, IndustriesSection, ServicesSection } from '@/components/sections'
 
 export const metadata: Metadata = {
   title: 'Industries | Kristalogic',
@@ -24,6 +24,7 @@ export default function IndustriesPage() {
           showPartnerLogos
         />
         <ServicesSection />
+        <IndustriesSection />
       </main>
       <Footer />
     </>
