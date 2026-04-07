@@ -77,7 +77,7 @@ export function ContactSection() {
             </div>
 
             <div className="flex max-w-sm flex-col gap-16 lg:items-end">
-              <div className="inline-flex w-fit items-center gap-3 self-start rounded-full bg-white/70 px-3 py-2 lg:self-end">
+              <div className="inline-flex w-fit flex-col items-start gap-2 self-start rounded-[1.25rem] bg-white/70 px-3 py-3 lg:self-end">
                 <div className="flex -space-x-2">
                   {contactAvatars.map((avatar) => (
                     <span
