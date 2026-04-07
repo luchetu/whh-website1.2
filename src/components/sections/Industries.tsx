@@ -17,7 +17,7 @@ const industryHighlights = [
     imageSrc: "/images/team.png",
     imageAlt: "Kristalogic team in a product strategy session",
     imageWrapClassName:
-      "w-full max-w-[16.75rem] justify-self-start md:max-w-[18.5rem] lg:max-w-[20rem]",
+      "w-full justify-self-start",
     imageAspectClassName: "aspect-[320/385]",
   },
   {
@@ -34,7 +34,7 @@ const industryHighlights = [
     imageSrc: "/images/team.png",
     imageAlt: "Kristalogic team reviewing product and engineering details",
     imageWrapClassName:
-      "w-full max-w-[16.75rem] justify-self-start md:max-w-[18.5rem] lg:max-w-[20rem]",
+      "w-full justify-self-start",
     imageAspectClassName: "aspect-[320/385]",
   },
 ];
@@ -47,28 +47,28 @@ function IndustryHighlight({
   imageAspectClassName,
 }: (typeof industryHighlights)[number]) {
   const contentWrapClassName = imageFirst
-    ? "w-full max-w-[640px] lg:ml-[2rem]"
-    : "w-full max-w-[640px]";
+    ? "w-full min-w-0 max-w-[640px] lg:ml-[2rem]"
+    : "w-full min-w-0 max-w-[640px]";
 
   const mediaWrapClassName = imageFirst
     ? "w-full max-w-[45rem]"
-    : "w-full max-w-[31.625rem]";
+    : "w-full max-w-[28.125rem]";
 
   const textWrapClassName = imageFirst
-    ? "flex w-full max-w-[37.5rem] flex-col gap-6 md:max-w-[34rem] lg:max-w-[37.5rem]"
-    : "flex w-full max-w-[42.75rem] flex-col gap-6 md:max-w-[40rem] lg:max-w-[42.75rem]";
+    ? "flex w-full min-w-0 max-w-[37.5rem] flex-col gap-6 md:max-w-[34rem] lg:max-w-[37.5rem]"
+    : "flex w-full min-w-0 max-w-[42.75rem] flex-col gap-6 md:max-w-[40rem] lg:max-w-[42.75rem]";
 
   const paragraphClassName = imageFirst
-    ? "w-full max-w-[37.5rem] text-[14px] font-normal leading-[1.5] tracking-[0] text-[#4d4d4d] lg:max-w-[38rem]"
-    : "w-full max-w-[42.75rem] text-[14px] font-normal leading-[1.5] tracking-[0] text-[#4d4d4d]";
+    ? "w-full min-w-0 max-w-[37.5rem] text-[14px] font-normal leading-[1.5] tracking-[0] text-[#4d4d4d] lg:max-w-[38rem]"
+    : "w-full min-w-0 max-w-[42.75rem] text-[14px] font-normal leading-[1.5] tracking-[0] text-[#4d4d4d]";
 
   const rowClassName = imageFirst
-    ? "grid items-start gap-10 lg:grid-cols-[720px_1fr] lg:gap-8"
-    : "grid items-start gap-10 lg:grid-cols-[640px_506px] lg:gap-12";
+    ? "grid items-start gap-8 sm:gap-10 lg:grid-cols-[720px_1fr] lg:gap-8"
+    : "grid items-start gap-8 sm:gap-10 lg:grid-cols-[640px_450px] lg:gap-12";
 
   const imageHeightClassName = imageFirst
-    ? "h-[17rem] md:h-[19.5rem] lg:h-[26rem]"
-    : "aspect-square";
+    ? "aspect-[5/4] sm:aspect-[16/10] lg:h-[26rem] lg:aspect-auto"
+    : "aspect-[1/1] sm:aspect-[5/4] lg:h-[21.25rem] lg:aspect-auto";
 
   const textBlock = (
     <div className={textWrapClassName}>
@@ -89,7 +89,7 @@ function IndustryHighlight({
             </>
           ) : (
             <>
-              <span className="block whitespace-nowrap">
+              <span className="block lg:whitespace-nowrap">
                 Transform Ideas into high value
               </span>
               <span className="block">products</span>
@@ -102,22 +102,29 @@ function IndustryHighlight({
       <p className={paragraphClassName}>
         {imageFirst ? (
           <>
-            <span className="block">
+            <span className="block lg:hidden">
+              For over 5 years, we&apos;ve crafted top-tier solutions across various
+              sectors. Our team of over 500 skilled engineers has transformed from
+              Python innovators to leaders in AI and Data Engineering. This extensive
+              knowledge ensures your vital projects are developed correctly and
+              launched swiftly.
+            </span>
+            <span className="hidden lg:block">
               For over 5 years, we&apos;ve crafted top-tier solutions across
             </span>
-            <span className="block">
+            <span className="hidden lg:block">
               various sectors. Our team of over 500 skilled engineers
             </span>
-            <span className="block">
+            <span className="hidden lg:block">
               has transformed from Python innovators to leaders in AI
             </span>
-            <span className="block">
+            <span className="hidden lg:block">
               and Data Engineering. This extensive knowledge ensures
             </span>
-            <span className="block">
+            <span className="hidden lg:block">
               your vital projects are developed correctly and launched
             </span>
-            <span className="block">swiftly.</span>
+            <span className="hidden lg:block">swiftly.</span>
           </>
         ) : (
           <>
@@ -133,9 +140,9 @@ function IndustryHighlight({
   );
 
   const imageBlock = (
-    <div className={`${mediaWrapClassName} ${imageWrapClassName}`}>
+    <div className={`mx-auto ${mediaWrapClassName} ${imageWrapClassName}`}>
       <div
-        className={`relative overflow-hidden bg-[#e8e2d8] ${imageHeightClassName}`}
+        className={`relative overflow-hidden rounded-[1.5rem] bg-[#e8e2d8] shadow-[0_18px_40px_rgba(10,10,12,0.08)] ${imageHeightClassName} lg:rounded-none lg:shadow-none`}
       >
         <Image
           src={imageSrc}
@@ -158,7 +165,7 @@ function IndustryHighlight({
       ) : (
         <>
           <div className={contentWrapClassName}>{textBlock}</div>
-          <div className="w-full max-w-[31.625rem] lg:ml-[6rem]">
+          <div className="w-full max-w-[28.125rem] lg:ml-[3rem]">
             {imageBlock}
           </div>
         </>
