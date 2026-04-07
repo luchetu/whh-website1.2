@@ -67,7 +67,7 @@ function IndustryHighlightRow({
     title.split(" | ");
 
   const textBlock = (
-    <div className="flex h-full w-full max-w-[36rem] items-center">
+    <div className="flex h-full w-full max-w-[36rem] items-start">
       <article className="w-full">
         <p className="mb-5 text-[11px] font-medium uppercase tracking-[0.12em] text-[#232323]">
           {eyebrow}
@@ -99,7 +99,7 @@ function IndustryHighlightRow({
   );
 
   return (
-    <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
+    <div className="grid items-start gap-8 lg:grid-cols-2 lg:gap-12">
       {imageFirst ? (
         <>
           <div className="flex h-full justify-start">{imageBlock}</div>

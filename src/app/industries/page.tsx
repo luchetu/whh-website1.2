@@ -23,7 +23,7 @@ export default function IndustriesPage() {
           secondaryCta={{ href: '/services', label: 'See All Services' }}
           showPartnerLogos
         />
-        <ServicesSection />
+        <ServicesSection eyebrow="Latest Projects" />
         <IndustriesSection />
       </main>
       <Footer />

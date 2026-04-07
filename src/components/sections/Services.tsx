@@ -1,6 +1,10 @@
 import Link from 'next/link'
 import { serviceItems } from '@/utils/serviceItems'
 
+type ServicesSectionProps = {
+  eyebrow?: string
+}
+
 function ServiceCard({
   title,
   description,
@@ -37,12 +41,17 @@ function ServiceCard({
   )
 }
 
-export function ServicesSection() {
+export function ServicesSection({ eyebrow }: ServicesSectionProps) {
   return (
     <section className="bg-white py-16 sm:py-20">
       <div className="px-4 sm:px-8 lg:px-12">
         <div className="grid gap-8 lg:grid-cols-[1.25fr_0.75fr] lg:items-start">
           <div className="max-w-xl">
+            {eyebrow ? (
+              <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-[#191919]">
+                {eyebrow}
+              </p>
+            ) : null}
             <h2 className="text-[2.2rem] font-medium leading-[1.15] tracking-[0] text-[#191919] min-[420px]:text-4xl sm:text-5xl">
               Transform Ideas
               <br />
