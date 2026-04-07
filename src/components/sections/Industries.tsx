@@ -72,7 +72,7 @@ function IndustryHighlightRow({
         <p className="mb-5 text-[11px] font-medium uppercase tracking-[0.12em] text-[#232323]">
           {eyebrow}
         </p>
-        <h2 className="max-w-[24rem] text-[2.05rem] font-normal leading-[1.12] tracking-[-0.04em] text-[#111111] sm:text-[2.55rem]">
+        <h2 className="max-w-[24rem] text-[2.05rem] font-medium leading-[1.12] tracking-[-0.04em] text-[#111111] sm:text-[2.55rem]">
           {titleLineOne}
           <br />
           {titleLineTwo}
