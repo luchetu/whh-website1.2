@@ -1,7 +1,7 @@
 
 import { ButtonLink } from '@/components/ui/Button'
 
-export function AboutUsTechnology() {
+export function AboutTechnologySection() {
   return (
     <section className="bg-white py-[64px] sm:py-[80px] lg:py-[96px]">
       <div className="mx-auto w-full max-w-[1306px] px-4 sm:px-8 lg:px-12">

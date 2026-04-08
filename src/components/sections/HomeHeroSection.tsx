@@ -3,7 +3,7 @@ import type { ReactNode } from 'react'
 import { ButtonLink } from '@/components/ui/Button'
 import { partnerLogos } from '@/utils/partnerLogos'
 
-type HeroSectionProps = {
+type HomeHeroSectionProps = {
   imageSrc: string
   imageAlt: string
   title: ReactNode
@@ -19,7 +19,7 @@ type HeroSectionProps = {
   showPartnerLogos?: boolean
 }
 
-export function HeroSection({
+export function HomeHeroSection({
   imageSrc,
   imageAlt,
   title,
@@ -27,7 +27,7 @@ export function HeroSection({
   primaryCta,
   secondaryCta,
   showPartnerLogos = false,
-}: HeroSectionProps) {
+}: HomeHeroSectionProps) {
   return (
     <section
       className="overflow-hidden bg-[#050b11] shadow-[0_24px_80px_rgba(20,20,20,0.12)]"

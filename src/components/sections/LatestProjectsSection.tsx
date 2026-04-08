@@ -48,7 +48,7 @@ function ServiceLatestProjectCard({ item }: { item: ServiceLatestProjectItem }) 
   )
 }
 
-export function ServicesLatestProjects() {
+export function LatestProjectsSection() {
   return (
     <section className="bg-white py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12">

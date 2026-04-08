@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { ButtonLink } from '@/components/ui/Button'
 
-type AboutHeroSectionProps = {
+type InnerPageHeroSectionProps = {
   imageSrc: string
   imageAlt: string
   title?: string
@@ -11,11 +11,11 @@ type AboutHeroSectionProps = {
   showPartnerLogos?: boolean
 }
 
-export function AboutHeroSection({
+export function InnerPageHeroSection({
   imageSrc,
   imageAlt,
   primaryCta,
-}: AboutHeroSectionProps) {
+}: InnerPageHeroSectionProps) {
   return (
     <section className="overflow-hidden bg-[#020913] text-white">
       <div className="relative min-h-[560px] border-b-2 border-[#7c2cff] sm:min-h-[620px]">
