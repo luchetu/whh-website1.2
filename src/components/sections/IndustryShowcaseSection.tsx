@@ -115,7 +115,7 @@ function IndustryHighlightRow({
   );
 }
 
-export function IndustriesSection() {
+export function IndustryShowcaseSection() {
   return (
     <section className="bg-white py-16 sm:py-20">
       <div className="px-4 sm:px-8 lg:px-14">

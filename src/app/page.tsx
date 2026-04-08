@@ -1,8 +1,8 @@
 import Footer from '@/components/layout/Footer'
 import {
   CaseStudiesSection,
-  HeroSection,
-  ServicesSection,
+  HomeHeroSection,
+  ServiceHighlightsSection,
   ServicesOfferingsSection,
 } from '@/components/sections'
 
@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <main className="text-[#161616]">
-        <HeroSection
+        <HomeHeroSection
           imageSrc="/images/hero1.jpg"
           imageAlt="Developer working late at a desk"
           title="We are Kristalogic Your trusted partner, more than a service provider."
@@ -22,7 +22,7 @@ export default function Home() {
           secondaryCta={{ href: '/services', label: 'See All Services' }}
           showPartnerLogos
         />
-        <ServicesSection />
+        <ServiceHighlightsSection />
         <CaseStudiesSection />
         <ServicesOfferingsSection />
       </main>

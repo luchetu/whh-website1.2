@@ -1,6 +1,10 @@
 import type { Metadata } from 'next'
 import Footer from '@/components/layout/Footer'
-import { AboutHeroSection, IndustriesSection, ServicesSection } from '@/components/sections'
+import {
+  IndustryShowcaseSection,
+  InnerPageHeroSection,
+  ServiceHighlightsSection,
+} from '@/components/sections'
 
 export const metadata: Metadata = {
   title: 'Industries | Kristalogic',
@@ -11,7 +15,7 @@ export default function IndustriesPage() {
   return (
     <>
       <main className="bg-[#f4f0ea] text-[#161616]">
-        <AboutHeroSection
+        <InnerPageHeroSection
           imageSrc="/images/hero3.jpg"
           imageAlt="A technology-focused hero background for the industries page"
           title="We are Kristalogic Your trusted partner, more than a service provider."
@@ -23,8 +27,8 @@ export default function IndustriesPage() {
           secondaryCta={{ href: '/services', label: 'See All Services' }}
           showPartnerLogos
         />
-        <ServicesSection eyebrow="Latest Projects" />
-        <IndustriesSection />
+        <ServiceHighlightsSection eyebrow="Latest Projects" />
+        <IndustryShowcaseSection />
       </main>
       <Footer />
     </>
