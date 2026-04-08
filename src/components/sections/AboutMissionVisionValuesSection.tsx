@@ -14,6 +14,7 @@ export function AboutMissionVisionValuesSection() {
               src="/images/team.png"
               alt="Our team collaborating on technology solutions"
               fill
+              sizes="(min-width: 1280px) 300px, (min-width: 1024px) 260px, 100vw"
               className="object-cover"
               priority
             />
